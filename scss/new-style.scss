@@ -1,0 +1,16 @@
+@import "./pb-menu-edit";
+@import "./_modals/modals-base";
+@import "./_modals/modals-letter";
+@import "./_modals/modals-emailinfo";
+
+body {
+  overflow-x: hidden !important;
+}
+
+.section_1 {
+  padding-top: 30px;
+}
+
+.profile-block {
+  overflow: inherit;
+}
