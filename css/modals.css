@@ -4,6 +4,14 @@
 .pb-menu li {
   cursor: pointer;
 }
+@media (max-width: 1020px) {
+  .pb-menu li {
+    width: 100%;
+  }
+  .pb-menu li:not(:last-child) {
+    margin-right: 15px;
+  }
+}
 .pb-menu li.active {
   z-index: 1;
 }
@@ -150,6 +158,11 @@
             transform: scale(1);
   }
 }
+@media (max-width: 480px) {
+  .pg-zoom {
+    display: none;
+  }
+}
 /* ------------------- Modal -------------------- */
 .modals {
   width: 100%;
@@ -169,8 +182,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,6 +208,9 @@
   position: relative;
   -webkit-box-shadow: 0px 40px 50px rgba(79, 53, 122, 0.6);
           box-shadow: 0px 40px 50px rgba(79, 53, 122, 0.6);
+  -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 .modals__close {
   cursor: pointer;
@@ -252,7 +268,10 @@
           box-sizing: border-box;
   color: #333;
   display: block;
-  font: 16px/130% Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serifserif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   height: 50px;
   padding: 0 20px;
   width: 100%;

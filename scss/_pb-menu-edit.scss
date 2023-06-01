@@ -1,9 +1,16 @@
 @import "./colors";
-
 .pb-menu {
   background: none;
   li {
     cursor: pointer;
+
+    @media (max-width: 1020px) {
+      width: 100%;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
     &.active {
       z-index: 1;
       .pb-item {
@@ -110,5 +117,11 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .pg-zoom {
+    display: none;
   }
 }

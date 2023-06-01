@@ -13,7 +13,7 @@
 		button.addEventListener('click', () => {
 			modals.forEach(modal => {
 				modal.classList.remove('is-active');
-				document.body.style.overflow = '';
+				body.style.overflow = '';
 				body.style.paddingRight = 0;
 
 			});
@@ -25,7 +25,7 @@
 		if (e.target.classList.contains('modals__close') || e.target.closest('.modals__close') || e.target.classList.contains('modals__overlay')) {
 			const modal = e.target.closest('.modals');
 			modal.classList.remove('is-active');
-			document.body.style.overflow = '';
+			body.style.overflow = '';
 			body.style.paddingRight = 0;
 
 		}
@@ -54,7 +54,7 @@
 	btnOpenModalReg.forEach(button => {
 		button.addEventListener('click', () => {
 			modalReg.classList.add('is-active');
-			document.body.style.overflow = 'hidden';
+			body.style.overflow = 'hidden';
 			body.style.paddingRight = `${scrollWidth}px`;
 		});
 	});
@@ -62,7 +62,7 @@
 	// Открытие модалки modals-letter
 	btnOpenModalLetter.addEventListener('click', () => {
 		modalLetter.classList.add('is-active');
-		document.body.style.overflow = 'hidden';
+		body.style.overflow = 'hidden';
 		body.style.paddingRight = `${scrollWidth}px`;
 	});
 
@@ -70,7 +70,7 @@
 	btnOpenModalEmail.addEventListener('click', () => {
 		modalEmail.classList.add('is-active');
 		modalLetter.classList.remove('is-active');
-		document.body.style.overflow = 'hidden';
+		body.style.overflow = 'hidden';
 		body.style.paddingRight = `${scrollWidth}px`;
 	});
 
@@ -78,7 +78,7 @@
 	btnOpenModalEmailInfo.addEventListener('click', () => {
 		modalEmailInfo.classList.add('is-active');
 		modalEmail.classList.remove('is-active');
-		document.body.style.overflow = 'hidden';
+		body.style.overflow = 'hidden';
 		body.style.paddingRight = `${scrollWidth}px`;
 	});
 
@@ -86,13 +86,13 @@
 	btnOpenModalSuccess.addEventListener('click', () => {
 		modalSuccess.classList.add('is-active');
 		modalEmailInfo.classList.remove('is-active');
-		document.body.style.overflow = 'hidden';
+		body.style.overflow = 'hidden';
 		body.style.paddingRight = `${scrollWidth}px`;
 	});
 
 	// Закрытие модалки modals-success
 	btnCloseModalSuccess.addEventListener('click', () => {
 		modalSuccess.classList.remove('is-active');
-		document.body.style.overflow = '';
+		body.style.overflow = '';
 		body.style.paddingRight = 0;
 	});
