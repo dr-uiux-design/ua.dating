@@ -90,50 +90,50 @@
 
 						<div class="photo-gallery">
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/e573d2d4da.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+11</b> more</span>
 								</a>
 							</div>
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/a67314e8ec.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+10</b> more</span>
 								</a>
 							</div>
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/eeebe98158.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+9</b> more</span>
 								</a>
 							</div>
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/7f88187a47.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+8</b> more</span>
 								</a>
 							</div>
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/bda3def6f1.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+7</b> more</span>
 								</a>
 							</div>
 							<div class="pg-item js-open-reg" style="background-image: url('https://ua.dating/photos/th/48d4d6d3bc.jpg')">
-								<a class="pg-zoom" href="#">
+								<a class="pg-zoom">
 									<span class="icon-plus"></span>
 								</a>
-								<a class="more-photo" href="#">
+								<a class="more-photo">
 									<span><b>+6</b> more</span>
 								</a>
 							</div>
@@ -158,6 +158,7 @@
 
 					</div>
 
+					<!-- SignUp Form -->
 					<div class="tabs visible-signup-form" id="signup">
 						<div class="popup-fon"></div>
 						<div class="popup popup-reg">
@@ -166,6 +167,34 @@
 							<form data-ajax-signup="https://ua.dating/signup">
 								<input type="hidden" name="_token" value="MP42I6bHSRYMREPcw28xDqjh90zVOnYaR5rYuWfL">
 								<div class="rf-body">
+									<!-- select-gender -->
+									<div class="select-gender">
+										<div class="select-gender__group gender">
+											<label class="radio select-gender__radio">
+												<input class="radio__input" type="radio" name="gender">
+												<span class="radio__box"></span>
+												<span class="radio__label">I am Men</span>
+											</label>
+											<label class="radio select-gender__radio">
+												<input class="radio__input" type="radio" name="gender">
+												<span class="radio__box"></span>
+												<span class="radio__label">I am Woman</span>
+											</label>
+										</div>
+										<div class="select-gender__group looking" style="display: none;">
+											<label class="radio select-gender__radio">
+												<input class="radio__input" type="radio" name="looking">
+												<span class="radio__box"></span>
+												<span class="radio__label">looking for <br> a Woman</span>
+											</label>
+											<label class="radio select-gender__radio">
+												<input class="radio__input" type="radio" name="looking">
+												<span class="radio__box"></span>
+												<span class="radio__label">looking for <br> a Men</span>
+											</label>
+										</div>
+									</div>
+									<!-- / .select-gender -->
 									<div class="rf-row">
 										<input name="name" class="rf-text-field" type="text" placeholder="Enter your name">
 									</div>
@@ -269,6 +298,34 @@
 				<div class="modals__body">
 					<!-- .modals-reg__form -->
 					<form class="form modals-reg__form" data-ajax-signup="https://ua.dating/signup">
+						<!-- select-gender -->
+						<div class="select-gender">
+							<div class="select-gender__group gender">
+								<label class="radio select-gender__radio">
+									<input class="radio__input" type="radio" name="gender">
+									<span class="radio__box"></span>
+									<span class="radio__label">I am Men</span>
+								</label>
+								<label class="radio select-gender__radio">
+									<input class="radio__input" type="radio" name="gender">
+									<span class="radio__box"></span>
+									<span class="radio__label">I am Woman</span>
+								</label>
+							</div>
+							<div class="select-gender__group looking" style="display: none;">
+								<label class="radio select-gender__radio">
+									<input class="radio__input" type="radio" name="looking">
+									<span class="radio__box"></span>
+									<span class="radio__label">looking for <br> a Woman</span>
+								</label>
+								<label class="radio select-gender__radio">
+									<input class="radio__input" type="radio" name="looking">
+									<span class="radio__box"></span>
+									<span class="radio__label">looking for <br> a Men</span>
+								</label>
+							</div>
+						</div>
+						<!-- / .select-gender -->
 						<input type="hidden" name="_token" value="MP42I6bHSRYMREPcw28xDqjh90zVOnYaR5rYuWfL">
 						<input name="name" class="rf-text-field" type="text" placeholder="Enter your name">
 						<input name="email" class="rf-text-field" type="text" placeholder="Enter your email address">

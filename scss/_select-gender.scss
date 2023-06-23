@@ -1,0 +1,49 @@
+.select-gender {
+  margin-bottom: 25px;
+}
+.select-gender__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.select-gender__radio {
+  .radio__label {
+    color: #fff;
+  }
+
+  .radio__box {
+    border: transparent;
+  }
+}
+
+// checked
+.select-gender__radio .radio__input:checked + .radio__box {
+  background: #fff;
+  background-size: 16px 16px;
+  border: none;
+
+  &::before {
+    display: block;
+  }
+}
+
+// Появление блока looking
+.looking {
+  display: none;
+  animation: fade 0.3s ease-in-out;
+
+  &.show {
+    display: block;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
