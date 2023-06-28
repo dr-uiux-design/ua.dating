@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dating profile Julia 35 y.o from Kyiv, Ukraine</title>
+	<meta name="description"
+		content="Never married a bride from ukraine Julia with blue eyes and a blond hair  from Kyiv, Ukraine is looking for a 30-65 y.o man.">
+	<meta name="keywords" content="Dating profile, a bride from ukraine, dating profile Ukraine, a bride from ukraine Ukraine, Ukraine, Kyiv">
+	<link href="https://ua.dating/3767606-never-married-julia-from-ukraine-kyiv" rel="canonical">
+	<meta property="og:title" content="Dating profile Julia 35 y.o from Kyiv, Ukraine" />
+	<meta property="og:description"
+		content="Never married a bride from ukraine Julia with blue eyes and a blond hair  from Kyiv, Ukraine is looking for a 30-65 y.o man." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ua.dating/3767606-never-married-julia-from-ukraine-kyiv" />
+	<meta property="og:image" content="https://ua.dating/photos/av/8489bfa1fb.jpg" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link href="./css/app.min.css" type="text/css" rel="stylesheet">
+	<link href="./css/icomoon.css" type="text/css" rel="stylesheet">
+	<script src="./js/app.js" defer></script>
+
+	<!-- New CSS -->
+	<link rel="stylesheet" href="./css/modals.css">
+	<!-- New JS -->
+	<script src="./js/radio-select.js" defer></script>
+</head>
+
+<body>
+
+	<!----------- Modal Register Form + Info Message ------------->
+	<div class="modal-message is-active">
+		<div class="modal-message__overlay">
+			<div class="modal-message__content">
+				<div class="modal-message__close"></div>
+
+				<!-- info-message -->
+				<div class="info-message">
+					<h3 class="info-message__title">For further viewing, <span>Registration is Required!</span></h3>
+					<button class="btn info-message__btn" type="button"><span>Register Now!</span></button>
+				</div>
+				<!-- / .info-message -->
+
+				<!-- Registeration -->
+				<div class="modals-reg">
+					<h3 class="modals__header-title">Register Now!</h3>
+					<form data-ajax-signup="https://ua.dating/signup">
+						<input type="hidden" name="_token" value="MP42I6bHSRYMREPcw28xDqjh90zVOnYaR5rYuWfL">
+						<div class="rf-body">
+							<!-- select-gender -->
+							<div class="select-gender">
+								<div class="select-gender__group gender">
+									<label class="radio select-gender__radio">
+										<input class="radio__input" type="radio" name="gender">
+										<span class="radio__box"></span>
+										<span class="radio__label">I am Men</span>
+									</label>
+									<label class="radio select-gender__radio">
+										<input class="radio__input" type="radio" name="gender">
+										<span class="radio__box"></span>
+										<span class="radio__label">I am Woman</span>
+									</label>
+								</div>
+								<div class="select-gender__group looking" style="display: none;">
+									<label class="radio select-gender__radio">
+										<input class="radio__input" type="radio" name="looking">
+										<span class="radio__box"></span>
+										<span class="radio__label">looking for <br> a Woman</span>
+									</label>
+									<label class="radio select-gender__radio">
+										<input class="radio__input" type="radio" name="looking">
+										<span class="radio__box"></span>
+										<span class="radio__label">looking for <br> a Men</span>
+									</label>
+								</div>
+							</div>
+							<!-- / .select-gender -->
+							<div class="rf-row">
+								<input name="name" class="rf-text-field" type="text" placeholder="Enter your name">
+							</div>
+							<div class="rf-row">
+								<input name="email" class="rf-text-field" type="text" placeholder="Enter your email address">
+							</div>
+							<div class="rf-row">
+								<input name="country" class="rf-text-field typeahead" type="text" placeholder="Enter your country" value="France">
+							</div>
+							<div class="rf-row">
+								<button class="btn" type="submit"><span>Join now</span></button>
+							</div>
+
+
+						</div>
+						<div class="privacy-policy">By clicking “Join Now” you agree with the <a href="https://ua.dating/terms" target="_blank"
+								rel="nofollow">Terms and Conditions</a> and <a href="https://ua.dating/privacy" target="_blank" rel="nofollow">Privacy
+								Policy</a></div>
+					</form>
+				</div>
+				<!-- / Registeration -->
+
+			</div>
+		</div>
+	</div>
+	<!----------- Modal Register Form + Info Message ------------->
+
+	<script>
+		/* ------------------- Модалка с уведомлением и формой регистрации -------------------- */
+		const modalMessage = document.querySelector('.modal-message');
+		const modalMessageClose = document.querySelector('.modal-message__close');
+		const modalMessageOverlay = document.querySelector('.modal-message__overlay');
+		const body = document.querySelector('body');
+
+		const infoMessageBtn = document.querySelector('.info-message__btn');
+		const infoMessage = document.querySelector('.info-message');
+
+		// Закрываем сообщение по кнопке
+		infoMessageBtn.addEventListener('click', () => {
+			infoMessage.classList.add('is-hide');
+		});
+
+		// Если модалка открыта, то запрещаем прокрутку body
+		if (modalMessage.classList.contains('is-active')) {
+			body.style.overflow = 'hidden';
+		}
+
+		// Закрытие модалки modal-message
+		modalMessageClose.addEventListener('click', () => {
+			modalMessage.classList.remove('is-active');
+			body.style.overflow = '';
+		});
+
+		// Закрытие по .modal-message__overlay
+		modalMessageOverlay.addEventListener('click', (e) => {
+			const isOverlayClick = e.target === modalMessageOverlay;
+			if (isOverlayClick) {
+				modalMessage.classList.remove('is-active');
+				body.style.overflow = '';
+			}
+		});
+	</script>
+
+</body>
+
+</html>
